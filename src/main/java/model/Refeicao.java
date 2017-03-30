@@ -1,9 +1,12 @@
 package model;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @Entity
@@ -20,6 +23,17 @@ public class Refeicao {
 	
 	@Column(name="descricao")
 	private String descricao;
+
+	@OneToMany(targetEntity = Presenca.class)	
+	private List<Presenca> presencas;
+	
+	public List<Presenca> getPresencas() {
+		return presencas;
+	}
+
+	public void setPresencas(List<Presenca> presencas) {
+		this.presencas = presencas;
+	}
 
 	public long getId() {
 		return id;
