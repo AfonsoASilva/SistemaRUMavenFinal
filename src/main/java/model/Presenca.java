@@ -1,0 +1,28 @@
+package model;
+
+import java.sql.Date;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="presenca")
+public class Presenca {
+
+	@Id
+	@GeneratedValue
+	@Column(name="id")
+	private long id;
+	
+	@Column(name="data")
+	private Date data;
+	
+	@Column(name="momento")
+	private char momento;
+	
+	
+	
+}
