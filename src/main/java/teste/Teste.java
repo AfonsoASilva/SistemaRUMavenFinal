@@ -16,7 +16,7 @@ public class Teste {
 		
 		user.setNome("super");
 
-		EntityManagerFactory  facoty = Persistence.createEntityManagerFactory("sistema_ru");
+		EntityManagerFactory  facoty = Persistence.createEntityManagerFactory("SistemaRUMavenFinal");
 		EntityManager manager = facoty.createEntityManager();
 		EntityTransaction transaction = manager.getTransaction();
 		
