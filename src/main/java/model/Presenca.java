@@ -24,7 +24,7 @@ public class Presenca {
 	@Column(name="momento")
 	private char momento;
 	
-	@ManyToOne(targetEntity=Refeicao.class)
+	/*@ManyToOne(targetEntity=Refeicao.class)
 	private Refeicao refeicao;
 	
 	@ManyToOne(targetEntity=Usuario.class)
@@ -32,7 +32,7 @@ public class Presenca {
 	
 	@ManyToOne(targetEntity=Aluno.class)
 	private Aluno aluno;
-
+*/
 	public long getId() {
 		return id;
 	}
@@ -55,30 +55,6 @@ public class Presenca {
 
 	public void setMomento(char momento) {
 		this.momento = momento;
-	}
-
-	public Refeicao getRefeicao() {
-		return refeicao;
-	}
-
-	public void setRefeicao(Refeicao refeicao) {
-		this.refeicao = refeicao;
-	}
-
-	public Usuario getUsuario() {
-		return usuario;
-	}
-
-	public void setUsuario(Usuario usuario) {
-		this.usuario = usuario;
-	}
-
-	public Aluno getAluno() {
-		return aluno;
-	}
-
-	public void setAluno(Aluno aluno) {
-		this.aluno = aluno;
 	}
 	
 }

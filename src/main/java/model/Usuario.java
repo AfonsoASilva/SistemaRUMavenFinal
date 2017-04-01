@@ -33,23 +33,15 @@ public class Usuario {
 	@Column(name="superUser")
 	private boolean superUser;
 	
-	@OneToMany(targetEntity = Presenca.class)
+/*	@OneToMany(targetEntity = Presenca.class)
 	private List<Presenca> presencas;
-	
+	*/
 	public boolean isSuperUser() {
 		return superUser;
 	}
 
 	public void setSuperUser(boolean superUser) {
 		this.superUser = superUser;
-	}
-
-	public List<Presenca> getPresencas() {
-		return presencas;
-	}
-
-	public void setPresencas(List<Presenca> presencas) {
-		this.presencas = presencas;
 	}
 
 	public String getCpf() {
